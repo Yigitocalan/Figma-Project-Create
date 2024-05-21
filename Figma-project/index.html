@@ -6,11 +6,13 @@
     <script src="https://kit.fontawesome.com/2ba6aeea67.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
 </head>
 <body>
     <!-- menu -->
     <header class="bg-white">
-        <nav class="container mx-auto flex justify-between items-center py-5 px-6 md:px-12 lg:px-24">
+        <nav class=" container mx-auto flex justify-between w-[1440px] h-[124px] items-center py-5 px-6 md:px-20 ">
             <!-- logo -->
             <div>
                 <a href="#" class="flex items-center text-3xl font-sans">
@@ -19,17 +21,17 @@
                 </a>
             </div>
             <!-- menu-links -->
-            <div class="hidden md:flex space-x-6 lg:space-x-10 items-center">
-                <a href="#" class="text-[#121212]">Home</a>
+            <div class="hidden md:flex  space-x-6 md:space- lg:space-x-10 items-center justify-center">
+                <a href="#" class="   text-[#121212] ">Home</a>
                 <a href="#" class="text-[#121212]">Story</a>
                 <a href="#" class="text-[#121212]">Menu</a>
                 <a href="#" class="text-[#121212]">Space</a>
                 <a href="#" class="text-[#121212]">Community</a>
                 <a href="#" class="text-[#121212]">News</a>
-                <button class="bg-[#A27B5C] text-white py-2 px-4">Order</button>
-                <button class="text-[#A27B5C] border-2 border-[#A27B5C] py-2 px-4">Sign In</button>
+                <button class="hidden xl:flex bg-[#A27B5C] text-white justify-center lg:py-[14px] px-[27px]  lg:w-[108px] h-[56px]">Order</button>
+                <button class= "hidden xl:flex text-[#A27B5C] border-2 border-[#A27B5C]  justify-center  lg:py-[14px] px-[27px]  lg:w-[114px] h-[56px]">Sign In</button>
             </div>
-            <div class="md:hidden">
+            <div class="sm:block  xl:hidden ">
                 <button class="text-[#A27B5C]">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -37,23 +39,99 @@
         </nav>
     </header>
     <!-- section -->
-    <div class="bg-[#FCF7EF] font-dm-sans">
-        <div class="container mx-auto py-20 px-6 md:px-12 lg:px-24">
+    <div class="bg-[#FCF7EF] w-full lg:h-[800px] content-center">
+        <div class="flex justify-center ">
+            <div >
+                <h1 class="text-3xl md:text-5xl lg:text-7xl font-medium text-center md:mb-5 lg:mb-10">Our News</h1>
+                <p class="text-base md:text-lg  font-sans font-normal text-center md:mb-5 lg:mb-10">Get the latest updates and deeper coffee experience from IMAJI Coffee</p>
+                <img src="figmaimg.png" class="mb-4" alt="News Image" />
+                <h2 class="sm:text-sm lg:text-2xl font-semibold  mb-1">Collaboration to Develop Coffee and Beverage Industry Expertise in Indonesia</h2>
+                <p class="text-gray-600 ">4 Min &middot; August 19, 2022</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- <div class="bg-[#FCF7EF] w-full h-[700px]">
+        <div class=" ">
             <div class="text-center mb-10">
-                <h1 class="text-4xl md:text-5xl lg:text-7xl font-semibold">Our News</h1>
-                <p class="text-lg md:text-xl lg:text-2xl">Get the latest updates and deeper coffee experience from IMAJI Coffee</p>
+                <h1 class="text-3xl md:text-5xl lg:text-7xl font-medium mb-5">Our News</h1>
+                <p class="text-base md:text-lg  font-sans font-normal">Get the latest updates and deeper coffee experience from IMAJI Coffee</p>
             </div>
             <div class="grid gap-8">
                 <div>
-                    <img src="figmaimg.png" class="w-full h-auto mb-8" alt="News Image" />
-                    <h2 class="text-2xl md:text-3xl font-semibold">Collaboration to Develop Coffee and Beverage Industry Expertise in Indonesia</h2>
-                    <p class="text-[#717171]">4 Min &middot; August 19, 2022</p>
+                    <div class="w-3/4 flex justify-center">
+                        <img src="figmaimg.png" class="w-full h-auto mb-4 md:mb-7" alt="News Image" />
+                    </div>
+                  
+                    <h2 class="text-xl md:text-2xl font-semibold mb-5">Collaboration to Develop Coffee and Beverage Industry Expertise in Indonesia</h2>
+                    <p class="text-gray-600">4 Min &middot; August 19, 2022</p>
                 </div>
             </div>
         </div>
+    </div> -->
+    
+
+
+
+    <div class="bg-white w-full py-10 mb-4 ">
+        
+        <div class="container mx-auto space-y-8">
+            <!-- Item 1 -->
+            
+            <hr />
+            <div class="flex flex-col lg:flex-row items-center space-x-4  lg:ml-[170px]">
+                <img src="grid1.png" class="w-[261px] h-[200px]" alt="Image 1" />
+                <div>
+                    <h2 class="font-sans  md:text-2xl lg:text-5xl ml-10 mb-5 ">Visited Doesoen Sirap Coffee, The Producer of Robusta in Central Java</h2>
+                    <p class="text-[#717171]  lg:ml-10">4 Min &middot; August 19, 2022</p>
+                </div>
+            </div>
+            <hr />
+            <!-- Item 2 -->
+            <div class="flex flex-col lg:flex-row items-center space-x-4 lg:ml-[170px]">
+                <img src="grid2.png" class="w-[261px] h-[200px]" alt="Image 2" />
+                <div>
+                    <h2 class=" font-sans  md:text-2xl lg:text-5xl ml-10 mb-5">Cold Brew Coffee, How to Drink Cold Coffee is More Enjoyable</h2>
+                    <p class="text-[#717171] lg:ml-10 ">4 Min &middot; August 19, 2022</p>
+                </div>
+            </div>
+            <hr />
+            <!-- Item 3 -->
+            <div class="flex flex-col lg:flex-row items-center space-x-4 lg:ml-[170px]">
+                <img src="grid3.png" class="w-[261px] h-[200px]" alt="Image 3" />
+                <div>
+                    <h2 class="font-sans  md:text-2xl lg:text-5xl ml-10 mb-5">Meet Coffee Tonic, the Sensation of Drinking Coffee-Flavored Soda</h2>
+                    <p class="text-[#717171] lg:ml-10">4 Min &middot; August 19, 2022</p>
+                </div>
+            </div>
+            <hr />
+            <!-- Item 4 -->
+            <div class="flex flex-col lg:flex-row items-center space-x-4 lg:ml-[170px]">
+                <img src="grid4.png" class="w-[261px] h-[200px]" alt="Image 4" />
+                <div>
+                    <h2 class="font-sans  md:text-2xl lg:text-5xl lg:ml-10 mb-5">Workshop Coffee Sharing Session</h2>
+                    <p class="text-[#717171] lg:ml-10">4 Min &middot; August 19, 2022</p>
+                </div>
+            </div>
+            <hr />
+            <!-- Item 5 -->
+            <div class="flex flex-col lg:flex-row items-center space-x-4 lg:ml-[170px]">
+                <img src="grid5.png" class="w-[261px] h-[200px]" alt="Image 5" />
+                <div>
+                    <h2 class="font-sans  md:text-2xl lg:text-5xl lg:ml-10 mb-5">Workshop Coffee Brewing</h2>
+                    <p class="text-[#717171] ml-10">4 Min &middot; August 19, 2022</p>
+                </div>
+            </div>
+            <div class="text-center mb-16 ">
+                <button class="text-[#A27B5C] border-2 border-[#A27B5C] py-2 px-4 mt- ">Load More</button>
+            </div>
+     
+            <!-- Item 6 -->
+         
+        </div>
     </div>
-    <!-- section grid -->
-    <div class="container mx-auto bg-white py-20 px-6 md:px-12 lg:px-24">
+    <!-- section grid
+    <div class="container mx-auto bg-white py-20 px-6 md:px-12 lg:px-24 ">
         <hr class="mb-8" />
         <div class="grid gap-8">
             <div class="grid md:grid-cols-3 gap-8 items-center">
@@ -65,7 +143,7 @@
             </div>
             <hr />
             <div class="grid md:grid-cols-3 gap-8 items-center">
-                <img src="grid2.png" class="w-full h-auto" alt="Image 2" />
+                <img src="grid2.png" class="w- h-auto" alt="Image 2" />
                 <div class="md:col-span-2">
                     <h2 class="text-2xl md:text-3xl lg:text-5xl font-medium">Cold Brew Coffee, How to Drink Cold Coffee is More Enjoyable</h2>
                     <p class="text-[#717171]">4 Min &middot; August 19, 2022</p>
@@ -99,34 +177,99 @@
         <div class="text-center mt-10">
             <button class="text-[#A27B5C] border-2 border-[#A27B5C] py-2 px-4">Load More</button>
         </div>
-    </div>
+    </div> -->
+    
+
+
     <!-- footer -->
-    <footer class="bg-black text-[#FCF7EF] py-20 px-6 md:px-12 lg:px-24">
-        <div class="text-center mb-8">
-            <h1 class="text-4xl md:text-5xl lg:text-3xl">Our Location</h1>
-            <div class="space-y-2 text-lg">
+
+    <footer class="bg-black w-full h-[529px] ">
+        <div class="flex justify-center flex-col items-center text-white">
+            <h1 class="text-7xl py-12 px-20">Our Location</h1>
+            <p class="text-lg ">Jl. Bangkringan No 19, RT.11/RW.2, Kota Surabaya, 60124</p>
+            <p class=" text-lg py-5 px-5">Customer Service +6282-2876-6862</p>
+            <p class=" text-lg ">We Are Open from Sun - Mon 10 AM - 22 PM</p>
+        </div>
+
+       <hr class="mt-8">
+        
+       <div class="flex-row text-center lg:flex justify-evenly mb: lg:mt-5 ">
+        <div class="space-x-4 px-[50px] text-xl text-white">
+            <a href="#"><i class="fab fa-spotify "></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+        <div class="flex justify-center md:justify-end space-x-4">
+            <div class="flex justify-center items-center text-white">
+                <p>Delivery Order</p>
+            </div>
+            <div class="flex space-x-4">
+                <img src="google-play-badge (2).png" alt="Google Play" class="h-8" />
+                <img src="logo app store.png" alt="App Store" class="h-8" />
+            </div>
+        </div>
+</div>
+
+<div class="flex-row text-center lg:flex justify-evenly  mt-[85px] ">
+    <div class="space-x-4 px-[50px] text-[#A27B5C] ">
+        <p>© 2023 IMAJI COFFEE, All rights reserved</p>
+    </div>
+    <div class="flex justify-center md:justify-end space-x-4">
+        <div class="flex justify-center items-centertext-[#A27B5C]">
+           
+        </div>
+        <div class="flex space-x-4 text-[#A27B5C]">
+            <p>Terms and Conditions</p>
+                <p>|</p>
+                <p>Privacy Policy</p>
+        </div>
+    </div>
+</div>
+
+
+
+       
+
+
+
+
+
+    </footer>
+
+
+
+    <!-- <footer class="bg-black text-[#FCF7EF]  w-full h-[529px] ">
+        <div class="text-center  ">
+            <div>
+                <h1 class="text-7xl md:text-5xl lg:text-7xl font-sans mb-10">Our Location</h1>
+            </div>
+            
+            <div class="text-lg">
                 <p>Jl. Bangkringan No 19, RT.11/RW.2, Kota Surabaya, 60124</p>
                 <p>Customer Service +6282-2876-6862</p>
                 <p>We Are Open from Sun - Mon 10 AM - 22 PM</p>
             </div>
-        </div>
-        <hr class="border-gray-600 mb-8" />
-        <div class="grid md:grid-cols-2 gap-8 items-center">
-            <div class="flex justify-center md:justify-start space-x-4">
-                <a href="#"><i class="fab fa-spotify"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-telegram"></i></a>
-            </div>
-            <div class="flex justify-center md:justify-end space-x-4">
-                <div class="text-center">
-                    <p>Delivery Order</p>
+            <hr class="border-gray-600 mb-8" />
+            <div class="flex justify-between items-center">
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#"><i class="fab fa-spotify"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
                 </div>
-                <div class="flex space-x-4">
-                    <img src="google-play-badge (2).png" alt="Google Play" class="h-8" />
-                    <img src="logo app store.png" alt="App Store" class="h-8" />
+                <div class="flex justify-center md:justify-end space-x-4">
+                    <div class="text-center">
+                        <p>Delivery Order</p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <img src="google-play-badge (2).png" alt="Google Play" class="h-8" />
+                        <img src="logo app store.png" alt="App Store" class="h-8" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,6 +281,6 @@
                 <p>Privacy Policy</p>
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
