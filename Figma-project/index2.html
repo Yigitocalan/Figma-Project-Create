@@ -7,6 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .carousel-item {
+            display: none;
+        }
+        .carousel-item.active {
+            display: flex;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body class="overflow-x-hidden">
@@ -79,36 +88,70 @@
 
                                                                         <!-- slider -->
     <div class="bg-[#FCF7EF] mx-auto h-auto">
-        <div class="text-center xl:text-start py-10">
-            <h1 class="text-5xl sm:mx-52 xl:mx-[482px] font-semibold">Other News</h1>
-            <hr class="mt-10">
-        </div>
-        <div class="flex flex-col sm:flex-row justify-center mx-10 xl:mx-0 mb-5   sm:space-x-1">
-            <div class="relative">
-                <div class="w-full max-w-[436px]">
-                    <img src="figma section.png" alt="Resim 1" class="w-full max-w-[444px] h-auto lg:h-[279px]">
-                </div>
-                <h2 class="font-semibold w-full max-w-[471px] mt-5">Collaboration to Develop Coffee and Beverage Industry Expertise in Indonesia</h2>
-                <p class="text-gray-600 mb-10 xl:mb-0">4 Min &middot; August 19, 2022</p>
+        <div class="mx-auto h-auto">
+            <div class="text-center xl:text-start py-10">
+                <h1 class="text-5xl sm:mx-52 xl:mx-[482px] font-semibold">Other News</h1>
+                <hr class="mt-10">
             </div>
-            <div class="relative">
-                <div class="w-full max-w-[436px] ">
-                    <img src="figma section.png" alt="Resim 1" class="w-full max-w-[444px] h-auto lg:h-[279px]">
+            <div class="carousel flex justify-center mx-10 xl:mx-0 mb-5 space-x-1">
+                <div class="carousel-item active relative space-x-5">
+                    <div class="w-full max-w-[436px]">
+                        <img src="figma section.png" alt="Resim 1" class="w-full max-w-[444px] h-auto lg:h-[279px]">
+                        <h2 class="font-semibold w-full max-w-[471px] mt-5">Collaboration to Develop Coffee and Beverage Industry Expertise in Indonesia</h2>
+                        <p class="text-gray-600 mb-10 xl:mb-0">4 Min &middot; August 19, 2022</p>
+                    </div>
+                    <div class="w-full max-w-[436px]">
+                        <img src="figma section.png" alt="Resim 2" class="w-full max-w-[444px] h-auto lg:h-[279px]">
+                        <h2 class="font-semibold w-full max-w-[471px] mt-5">Collaboration to Develop Coffee and Beverage Industry Expertise in Indonesia</h2>
+                        <p class="text-gray-600 mb-10 xl:mb-0">4 Min &middot; August 19, 2022</p>
+                    </div>
                 </div>
-                <h2 class="font-semibold w-full max-w-[471px] mt-5">Collaboration to Develop Coffee and Beverage Industry Expertise in Indonesia</h2>
-                <p class="text-gray-600">4 Min &middot; August 19, 2022</p>
+                <div class="carousel-item relative space-x-5">
+                    <div class="w-full max-w-[436px]">
+                        <img src="figma section.png" alt="Resim 3" class="w-full max-w-[444px] h-auto lg:h-[279px]">
+                        <h2 class="font-semibold w-full max-w-[471px] mt-5">Collaboration to Develop Coffee and Beverage Industry Expertise in Indonesia</h2>
+                        <p class="text-gray-600 mb-10 xl:mb-0">4 Min &middot; August 19, 2022</p>
+                    </div>
+                    <div class="w-full max-w-[436px]">
+                        <img src="figma section.png" alt="Resim 4" class="w-full max-w-[444px] h-auto lg:h-[279px]">
+                        <h2 class="font-semibold w-full max-w-[471px] mt-5">Collaboration to Develop Coffee and Beverage Industry Expertise in Indonesia</h2>
+                        <p class="text-gray-600 mb-10 xl:mb-0">4 Min &middot; August 19, 2022</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="flex justify-center mt-5 py-10 space-x-2">
+                <button class="carousel-btn bg-gray-300 hover:bg-orange-800 rounded-full h-4 w-4 focus:outline-none"></button>
+                <button class="carousel-btn bg-gray-300 hover:bg-orange-800 rounded-full h-4 w-4 focus:outline-none"></button>
+                <button class=" bg-gray-300 hover:bg-orange-800 rounded-full h-4 w-4 focus:outline-none"></button>
             </div>
         </div>
-
-       
-        <div class="flex justify-center mt-5 py-10 space-x-2">
-            <button class="bg-gray-300 hover:bg-orange-800 rounded-full h-4 w-4 focus:outline-none"></button>
-            <button class="bg-gray-300 hover:bg-orange-800 rounded-full h-4 w-4 focus:outline-none"></button>
-            <button class="bg-gray-300 hover:bg-orange-800 rounded-full h-4 w-4 focus:outline-none"></button>
-        </div>
-    </div>
-
     
+        <script>
+            const items = document.querySelectorAll('.carousel-item');
+            const buttons = document.querySelectorAll('.carousel-btn');
+    
+            let activeIndex = 0;
+    
+            function showSlide(index) {
+                items.forEach((item, i) => {
+                    item.classList.toggle('active', i === index);
+                });
+                buttons.forEach((btn, i) => {
+                    btn.classList.toggle('bg-orange-800', i === index);
+                    btn.classList.toggle('bg-gray-300', i !== index);
+                });
+            }
+    
+            buttons.forEach((btn, index) => {
+                btn.addEventListener('click', () => {
+                    activeIndex = index;
+                    showSlide(index);
+                });
+            });
+    
+            showSlide(activeIndex);
+        </script>
 
 
        <!-- footer -->
